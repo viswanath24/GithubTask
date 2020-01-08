@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         print("Hello World")
     }
 
-
+    @IBAction func btnAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "secview") as! SecondViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
